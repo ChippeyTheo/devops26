@@ -26,28 +26,24 @@ curl http://localhost:9090/ping
 ```bash
 docker run tp02:single whoami`
 ```
-# doit afficher : appuser
+doit afficher : appuser
 
 ```bash
 docker run tp02:multi whoami`
 ```
-# doit afficher : appuser
+doit afficher : appuser
 
 ```bash
 docker scout cves tp02:single
 docker scout cves tp02:multi
 ```
-# doit afficher des vulnérabilités de ce genre : CVE-2024-5525  MEDIUM  busybox 1.36.x    Command injection
+doit afficher des vulnérabilités de ce genre : CVE-2024-5525  MEDIUM  busybox 1.36.x    Command injection
 
 ### tp02:single
-- CRITICAL : X
-- HIGH : X
-- MEDIUM : X
+- TAILLE : 492MB
 
 ### tp02:multi
-- CRITICAL : X
-- HIGH : X
-- MEDIUM : X
+- TAILLE : 26.4MB
 
 > L'image multi-stage est plus légère et présente moins de vulnérabilités
 > car elle ne contient pas le compilateur Go ni les sources.
